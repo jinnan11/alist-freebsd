@@ -1,18 +1,22 @@
-# Serv00 部署 AList
-
-参考 [Saika](https://saika.us.kg) 大佬的方法
+## Serv00 部署 AList
 
 实现真正的访问即保活，访问即唤醒。
 
 实现重启进程自动更新最新版的Alist，运行 AList
 
-### 注册账号，部署 Alist 前的一些准备工作
+### 部署 Alist 前的一些准备工作
 
-参考[使用Serv00免费虚拟主机部署Alist](https://zhuanlan.zhihu.com/p/680607217)
+**参考[使用Serv00免费虚拟主机部署Alist](https://zhuanlan.zhihu.com/p/680607217)**
 
-**注册账号、开启允许Run your own applications、添加两个TCP端口、新建一个数据库**
+1. 注册账号
 
-接着回到Panel中，找到WWW Websites选项卡
+2. 开启允许Run your own applications
+
+3. 添加两个TCP端口
+
+4. 新建一个数据库
+
+**接着回到Panel中，找到WWW Websites选项卡**
 
 可删除原来的网站并使用
 
@@ -35,9 +39,11 @@
 
 在 Panel 中点击左侧菜单栏中的 SSL ，然后点击上方菜单栏中的 WWW websites ，点击第一个 IP Address 最右侧的 Manage 按钮，再点击上方菜单栏中的 Add certificate 按钮，Type 选择 Generate Let's Encrypt certificate， Domain任选一个即可，最后点击下方的 Add 按钮进行生成。
 
+---
+
 ### 部署Alist
 
-接着使用SSH登入到你的账户，我使用的SSH客户端是[Termius](https://termius.com)：
+接着使用SSH登入到你的账户，我使用的SSH客户端是[Termius](https://termius.com)
 
 SSH填写参考
 
@@ -52,6 +58,8 @@ SSH填写参考
 ~~~
 cd ~/domains/网站/public_nodejs
 ~~~
+
+记得把网站替换成你的网站
 
 **下载AList和运行Node.js的基础文件：**
 
@@ -88,7 +96,7 @@ npm22 install
 
 同时，你也可以选择自建 [Uptime-Kuma](https://github.com/louislam/uptime-kuma) 等服务进行监控。
 
-
+---
 
 ### 常见问题
 
@@ -122,3 +130,11 @@ npm22 install
    请自行访问测试站查看支持情况：
    
    测试站：https://test.jnpan.top
+
+---
+
+### 相关参考网站
+
+使用Serv00免费虚拟主机部署Alist：https://zhuanlan.zhihu.com/p/680607217
+
+Serv00 进程保活最终解决方案：https://saika.us.kg/2024/08/15/serv00-keep-alive
