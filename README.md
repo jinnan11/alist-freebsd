@@ -10,7 +10,7 @@
 
 1. 注册账号
 
-2. 开启允许Run your own applications
+2. 允许Run your own applications
 
 3. 添加两个TCP端口
 
