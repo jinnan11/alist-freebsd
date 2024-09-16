@@ -145,6 +145,22 @@ npm22 install
    
    测试站：https://test.jnpan.top
 
+### 本教程常见指令
+
+   **随机生成一个AList密码**
+
+   ~~~
+   ./web.js admin random
+   ~~~
+
+   (需要cd ~/domains/网站/public_nodejs路经下运行)
+
+   **关闭用户所有进程**
+
+   ~~~
+   killall -u $(whoami)
+   ~~~
+
 ---
 
 ### 相关参考网站
