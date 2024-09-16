@@ -49,7 +49,7 @@ SSH填写参考
 
 | Key          | Value          |
 |--------------|----------------|
-| **Address**  | s3.serv00.com  |
+| **Address**  | s8.serv00.com  |
 | **Username** | jnpan          |
 | **Password** | 114514Vv       |
 
@@ -68,6 +68,20 @@ bash <(curl -s https://raw.githubusercontent.com/jinnan11/serv00-api/main/instal
 ~~~
 
 并按照提示修改相关端口号。
+
+参考[使用Serv00免费虚拟主机部署Alist](https://zhuanlan.zhihu.com/p/680607217)
+
+1. 修改data/config.json
+
+补充
+
+第25行的IP地址无需修改，使用默认0.0.0.0
+
+第83行的端口号5246改为0
+
+首次使用需要在Choose another editor添加Source Editor 
+
+app.js 第13行端口号需要和data/config.json中的端口号保持一致
 
 **启动一次AList，查看运行是否正常**
 
