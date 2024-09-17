@@ -20,40 +20,40 @@
 
 **接着回到Panel中，找到WWW Websites选项卡**
 
-可删除原来的网站并使用
-
 使用Add website功能新建一个Node.js类型的网站
 
-填写参考
+可删除原来的xxx.serv00.net并重新使用xxx.serv00.net
 
-| Key                | Value           |
-|--------------------|-----------------|
-| **Domain**         | xxx.serv00.net  |
-| **Website type**   | Node.js         |
-| **Node.js binary** | Node.js v22.4.1 |
-| **Environment**    | Production      |
+![新建Node.js类型的网站](https://github.com/user-attachments/assets/b8ef1f8b-edcd-4cee-9510-a4ca096de1b0)
+
+最后点击下方的 Add 按钮进行生成。
 
 **自定义域名**
 
+(使用xxx.serv00.net二级域名可跳过该步骤)
+
 在 Panel 中点击左侧菜单栏中的 SSL ，然后点击上方菜单栏中的 WWW websites ，复制第一个 IP Address ，并在网站管理处添加 A 记录
+
+![自定义域名](https://github.com/user-attachments/assets/146db739-256a-4e52-b080-ad1c2e64896c)
+
 
 **生成一个 Let's Encrypt 证书：**
 
 在 Panel 中点击左侧菜单栏中的 SSL ，然后点击上方菜单栏中的 WWW websites ，点击第一个 IP Address 最右侧的 Manage 按钮，再点击上方菜单栏中的 Add certificate 按钮，Type 选择 Generate Let's Encrypt certificate， Domain任选一个即可，最后点击下方的 Add 按钮进行生成。
 
+![Manage](https://github.com/user-attachments/assets/0e9f7dfe-dfe4-4bf7-9c6e-6c87ee0b0677)
+
+
+![Add certificate](https://github.com/user-attachments/assets/48e74666-633a-4f29-a2cd-6363e78f3514)
+
 ---
 
 ### 部署Alist
 
-接着使用SSH登入到你的账户，我使用的SSH客户端是[Termius](https://termius.com)
+**接着使用SSH登入到你的账户，我使用的SSH客户端是[Termius](https://termius.com)**
 
-SSH填写参考
+![SSH](https://github.com/user-attachments/assets/8b53ddc3-123f-4d08-944c-3a3922473b75)
 
-| Key          | Value          |
-|--------------|----------------|
-| **Address**  | s8.serv00.com  |
-| **Username** | jnpan          |
-| **Password** | 114514Vv       |
 
 **进入 nodejs 的工作目录：**
 
@@ -69,13 +69,22 @@ cd ~/domains/网站/public_nodejs
 bash <(curl -s https://raw.githubusercontent.com/jinnan11/serv00-api/main/install_alist.sh)
 ~~~
 
+![SSH](https://github.com/user-attachments/assets/96fc3313-955b-41e3-babf-986096fca470)
+
+
 **根据提示修改相关端口号。**
 
 右键点击文件，选择View/Edit > Source Editor，进行编辑
 
 首次使用需要在Choose another editor添加Source Editor
 
+![Source Editor](https://github.com/user-attachments/assets/5de75781-0cd9-420d-a398-12b020139aeb)
+
+
 1. app.js 第13行端口号需要和data/config.json中的第26行的端口号保持一致
+
+![app.js](https://github.com/user-attachments/assets/84089bb6-d0dd-4af1-abcc-6ea60c108f4d)
+
 
 2. 修改data/config.json
 
@@ -89,11 +98,17 @@ bash <(curl -s https://raw.githubusercontent.com/jinnan11/serv00-api/main/instal
 
    第83行的端口号5246改为0
 
+![data/config.json](https://github.com/user-attachments/assets/465139e4-fae6-4293-8a8a-5c403d279eff)
+
+
 **启动一次AList，查看运行是否正常**
 
 ~~~
 ./web.js server
 ~~~
+
+![启动AList](https://github.com/user-attachments/assets/e2b04370-7506-4c12-9a8f-1f02ab99bfcf)
+
 
 运行正常，记得把管理员用户的密码记住。接着使用Ctrl+c停止运行。
 
@@ -102,6 +117,9 @@ bash <(curl -s https://raw.githubusercontent.com/jinnan11/serv00-api/main/instal
 ~~~
 npm22 install
 ~~~
+
+![安装npm22](https://github.com/user-attachments/assets/2054252d-c406-41de-ab9c-30aff1fb11ae)
+
 
 访问您的网站
 
