@@ -67,21 +67,23 @@ cd ~/domains/网站/public_nodejs
 bash <(curl -s https://raw.githubusercontent.com/jinnan11/serv00-api/main/install_alist.sh)
 ~~~
 
-并按照提示修改相关端口号。
+**根据提示修改相关端口号。**
 
-参考[使用Serv00免费虚拟主机部署Alist](https://zhuanlan.zhihu.com/p/680607217)
+首次使用需要在Choose another editor添加Source Editor
 
-1. 修改data/config.json
+1. app.js 第13行端口号需要和data/config.json中的第26行的端口号保持一致
 
-补充
+2. 修改data/config.json
 
-第25行的IP地址无需修改，使用默认0.0.0.0
+   参考[使用Serv00免费虚拟主机部署Alist](https://zhuanlan.zhihu.com/p/680607217)
 
-第83行的端口号5246改为0
+   补充
 
-首次使用需要在Choose another editor添加Source Editor 
+   第25行的IP地址无需修改，使用默认0.0.0.0
 
-app.js 第13行端口号需要和data/config.json中的端口号保持一致
+   第26行的端口号需要和app.js中的第13行端口号保持一致
+
+   第83行的端口号5246改为0
 
 **启动一次AList，查看运行是否正常**
 
@@ -116,50 +118,50 @@ npm22 install
 
 1. **如何更新AList**
 
-   SSH 登录 Serv00，输入以下命令：
+SSH 登录 Serv00，输入以下命令：
    
-   ~~~
-   killall -u $(whoami)
-   ~~~
+~~~
+killall -u $(whoami)
+~~~
 
-   访问网站
+访问网站
 
 2. **国内为什么访问不了网站**
 
-   Serv00部分服务器不定期屏蔽国内IP。
+Serv00部分服务器不定期屏蔽国内IP。
 
-   套一层CF 或 使用代理工具，访问网站
+套一层CF 或 使用代理工具，访问网站
 
 4. **为什么挂载不了国内网盘**
 
-   Serv00部分服务器不定期屏蔽国内IP。
+Serv00部分服务器不定期屏蔽国内IP。
 
-   看邮件 SSH/SFTP server address
+看邮件 SSH/SFTP server address
 
-   ~~~
-   s7.serv00.com = S7
-   s8.serv00.com = S8
-   ~~~
+~~~
+s7.serv00.com = S7
+s8.serv00.com = S8
+~~~
 
-   请自行访问测试站查看支持情况：
+请自行访问测试站查看支持情况：
    
-   测试站：https://test.jnpan.top
+测试站：https://test.jnpan.top
 
 ### 本教程常见指令
 
-   **随机生成一个AList密码**
+**随机生成一个AList密码**
 
-   ~~~
-   ./web.js admin random
-   ~~~
+~~~
+./web.js admin random
+~~~
 
-   (需要cd ~/domains/网站/public_nodejs路经下运行)
+(需要cd ~/domains/网站/public_nodejs路经下运行)
 
-   **关闭用户所有进程**
+**关闭用户所有进程**
 
-   ~~~
-   killall -u $(whoami)
-   ~~~
+~~~
+killall -u $(whoami)
+~~~
 
 ---
 
