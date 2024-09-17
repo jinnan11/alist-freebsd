@@ -4,6 +4,8 @@
 
 实现重启进程自动更新最新版的Alist，运行 AList
 
+---
+
 ### 部署 Alist 前的一些准备工作
 
 **参考[使用Serv00免费虚拟主机部署Alist](https://zhuanlan.zhihu.com/p/680607217)**
@@ -68,6 +70,8 @@ bash <(curl -s https://raw.githubusercontent.com/jinnan11/serv00-api/main/instal
 ~~~
 
 **根据提示修改相关端口号。**
+
+右键点击文件，选择View/Edit > Source Editor，进行编辑
 
 首次使用需要在Choose another editor添加Source Editor
 
@@ -146,6 +150,8 @@ s8.serv00.com = S8
 请自行访问测试站查看支持情况：
    
 测试站：https://test.jnpan.top
+
+---
 
 ### 本教程常见指令
 
