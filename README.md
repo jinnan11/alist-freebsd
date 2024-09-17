@@ -123,6 +123,9 @@ npm22 install
 
 访问您的网站
 
+![槿南盘](https://github.com/user-attachments/assets/ab6b52dd-fb96-497e-a7a6-ab87b0b996b1)
+
+
 ---
 
 ### 自动启动
