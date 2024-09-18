@@ -143,34 +143,34 @@ npm22 install
 
 1. **如何更新AList**
 
-SSH 登录 Serv00，输入以下命令：
+   SSH 登录 Serv00，输入以下命令：
    
-~~~
-killall -u $(whoami)
-~~~
+   ~~~
+   killall -u $(whoami)
+   ~~~
 
-访问网站
+   访问网站
 
 2. **国内为什么访问不了网站**
 
-Serv00部分服务器不定期屏蔽国内IP。
+   Serv00部分服务器不定期屏蔽国内IP。
 
-套一层CF 或 使用代理工具，访问网站
+   套一层CF 或 使用代理工具，访问网站
 
 4. **为什么挂载不了国内网盘**
 
-Serv00部分服务器不定期屏蔽国内IP。
+   Serv00部分服务器不定期屏蔽国内IP。
 
-看邮件 SSH/SFTP server address
+   看邮件 SSH/SFTP server address
 
-~~~
-s7.serv00.com = S7
-s8.serv00.com = S8
-~~~
+   ~~~
+   s7.serv00.com = S7
+   s8.serv00.com = S8
+   ~~~
 
-请自行访问测试站查看支持情况：
+   请自行访问测试站查看支持情况：
    
-测试站：https://test.jnpan.top
+   测试站：https://test.jnpan.top
 
 ---
 
