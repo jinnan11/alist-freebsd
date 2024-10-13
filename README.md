@@ -4,6 +4,8 @@
 
 实现重启进程自动更新最新版的Alist，运行 AList
 
+搭建视频演示：https://test.jnpan.top/OneDrive/AList
+
 ---
 
 ### 部署 Alist 前的一些准备工作
